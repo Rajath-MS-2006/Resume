@@ -7,3 +7,7 @@ body
 {
     background: color #f5f5f5;
 }
+#name
+{
+    border: solid black 2px;
+}
