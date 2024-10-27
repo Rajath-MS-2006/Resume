@@ -1,16 +1,160 @@
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body
-{
-    background: color #f5f5f5;
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-#resume
-{
-    border: solid black 2px;
+
+.resume-container {
+  background: lightblue;
+
+  width: 1400px;
+  //max-width: 1400px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+// Header 
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.profession {
+  font-size: 1.2rem;
+  color: #ff4081;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+/* Tab Navigation */
+.tab-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-label {
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.tab-label:hover {
+  color: #ff4081;
+}
+
+/* Tab Content */
+input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  padding: 1.5rem 0;
+}
+
+input[type="radio"]:checked + .tab-content {
+  display: block;
+}
+
+//About Section//
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+//Skills Section //
+.skills {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.skill {
+  padding: 0.5rem 1rem;
+  background: #ff4081;
+  color: white;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+// Experience Section
+.experience div {
+  margin-bottom: 1rem;
+}
+
+.experience h3 {
+  font-size: 1.1rem;
+  color: #ff4081;
+  margin-bottom: 0.2rem;
+}
+
+/* Education Section */
+.education-section p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+
+@media (max-width: 600px) {
+  .resume-container {
+    padding: 1rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+img
+{   border: solid black 2px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    position:absolute;
+    transform: translate(900px,0px);
     
-    height: 600px;
-    width: 1200px;
+}
+table
+{
+    background-color: blue;
+    color: red;
+    
+}
+
+a
+{ 
+  color: red; 
+  text-decoration: none; 
+  background-size: contain;  
+ background-repeat: no-repeat;
 }
