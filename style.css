@@ -141,7 +141,8 @@ img
     width: 150px;
     display: flex;
     position:absolute;
-    transform: translate(900px,0px);
+    transform: translate(1200px,0px);
+    
     
 }
 table
