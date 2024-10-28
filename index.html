@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Resume</title>
+  <!--link rel="stylesheet" href="styles.css"-->
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,13 +17,7 @@
       <p class="profession">Student</p>
     </header>
     <!-- Tab Navigation -->
-    <nav class="tab-nav">
-      <label for="personal" class="tab-label">Personal Details</label>
-      <label for="education" class="tab-label">Educational Qualifications</label>
-      <label for="skills" class="tab-label">Skills & Certificates</label>
-      <label for="hobbies" class="tab-label">Hobbies</label>
-      <label for="contact" class="tab-label">Form</label>
-    </nav>
+  
 
     <!-- Tab Content -->
     <input type="radio" name="tab" id="personal" checked>
@@ -96,7 +91,7 @@
         <li>Certificates: <ul>
           <li><a href="HTML-2022.pdf">HTML-2022</a></li>
           <li><a href="HTML-Advanced.pdf">HTML-Advanced</a></li>
-          <li><a href="Mastering CSS.pdf">Mastering CSS</a></li>
+          <li><a href="Mastering_CSS.pdf">Mastering CSS</a></li>
           <li><a href="Programming_in_C.pdf">Programming in C</a></li>
         </ul>
         </li>
@@ -112,20 +107,21 @@
     <input type="radio" name="tab" id="contact">
     <section class="tab-content">
       <h2>Contact Form</h2>
-     <form action="https://formspree.io/f/mvgozbvl" method="POST">
-            <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
-            <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+       <form action="https://formspree.io/f/mvgozbvl" method="POST">
+            <label for="name" style="display: block; margin-bottom: 15px;">Name:</label>
+            <input id="Name" type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
             
-            <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
-            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+            <label for="email" style="display: block; margin-bottom: 25px;">Email:</label>
+            <input id="Email" type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
             
-            <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
+            <label for="message" style="display: block; margin-bottom: 35px;">Message:</label>
             <textarea id="message" name="message" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea>
             
             <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer;">
                 Send
             </button>
         </form>
+
     </section>
   </div>
 </body>
